@@ -1288,7 +1288,7 @@
      letter-spacing: 0.02em;
  }
 
- .mobile-menu-link.current {
+ .mobile-menu-link.current-menu {
      color: var(--OCEAN, #404BBF);
  }
 
@@ -1315,6 +1315,10 @@
      font-weight: 500;
      line-height: 1.2;
      letter-spacing: 0.02em;
+ }
+ .menu{
+    justify-content: space-between;
+    max-width: 328px;
  }
 
 

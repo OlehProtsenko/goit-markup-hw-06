@@ -27,7 +27,7 @@
     <!-- header -->
 
     <header class="header">
-      <!-- !logo -->
+      
 
       <div class="container-header container">
         <nav class="nav list">
@@ -35,18 +35,16 @@
             Web<span class="span-dark">Studio</span>
           </a>
 
-          <!-- !menu  -->
+        
 
           <ul class="navigation-list list">
             <li class="navigation-list-item">
-              <a href="./index.html" class="navigation-item-link link"
+              <a href="./index.html" class="navigation-item-link link "
                 >Studio</a
               >
             </li>
             <li class="navigation-list-item">
-              <a
-                href="./portfolio.html"
-                class="navigation-item-link link current"
+              <a href="./portfolio.html" class="navigation-item-link link current"
                 >Portfolio</a
               >
             </li>
@@ -55,9 +53,7 @@
             </li>
           </ul>
         </nav>
-
-        <!-- !address -->
-
+    
         <address class="address">
           <ul class="addres-list list">
             <li class="addres-list-item">
@@ -373,23 +369,127 @@
         </div>
       </div>
     </footer>
+    <!-- modal -->
+
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-inside" data-modal>
+        <button class="modal-close-button" type="button" data-modal-close>
+          <svg class="svg-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+
+        <p class="modal-caption">
+          Leave your contacts and we will call you back
+        </p>
+
+        <form class="modal-form" name="review_form">
+          <div class="modai-form-field">
+            <label class="modal-form-label" for="user-name">Name</label>
+            <div class="modai-form-field">
+              <input
+                class="modal-form-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder=""
+              />
+              <svg class="modal-form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modai-form-field">
+            <label class="modal-form-label" for="user-phone">Phone</label>
+            <div class="modai-form-field">
+              <input
+                class="modal-form-input"
+                type="tel"
+                name="user-name"
+                id="user-phone"
+                placeholder=""
+              />
+              <svg class="modal-form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modai-form-field">
+            <label class="modal-form-label" for="user-email">Email</label>
+            <div class="modai-form-field">
+              <input
+                class="modal-form-input"
+                type="email"
+                name="user-name"
+                id="user-email"
+                placeholder=""
+              />
+              <svg class="modal-form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-form-field-coment">
+            <label class="modal-form-label" for="user-comment">Comment</label>
+            <textarea
+              class="modal-form-comment"
+              name="user-comment"
+              id="user-comment"
+              rows="8"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="modal-foorm-field-checkbox">
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+              id="user-privacy"
+            />
+            <label class="modal-form-agrement" for="user-privacy">
+              <span class="agrement-checkbox">
+                <svg class="agrement-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-Vector-1"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+
+              <a
+                class="modal-form-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                >Privacy Policy</a
+              >
+            </label>
+          </div>
+
+          <button class="modal-form-button button" type="submit" disabled>
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
      <!-- Mobile Menu -->
      <div class="menu-container js-menu-container" id="mobile-menu">
       <div class="mobile-menu-wrapper">
         <button class="menu-toggle js-close-menu">
           <svg class="menu-toggle-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close-black"></use>
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
           </svg>
         </button>
 
         <ul class="mobile-menu list">
           <li class="mobile-menu-item">
-            <a class="mobile-menu-link current link" href="./index.html"
+            <a class="mobile-menu-link  link" href="./index.html"
               >Studio</a
             >
           </li>
           <li class="mobile-menu-item">
-            <a class="mobile-menu-link link" href="./portfolio.html"
+            <a class="mobile-menu-link current-menu link" href="./portfolio.html"
               >Portfolio</a
             >
           </li>
@@ -414,32 +514,32 @@
           </li>
         </ul>
 
-        <ul class="mobile-list-socials list">
-          <li class="mobile-list-socials-item">
-            <a class="mobile-list-socials-link link" href="">
-              <svg class="mobile-socials-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-instagram"></use>
+        <ul class="footer-wrap-list menu list">
+          <li class="team-wrape-item social-item">
+            <a class="social-link-footer" href="">
+              <svg class="link-icon-footer" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
               </svg>
             </a>
           </li>
-          <li class="mobile-list-socials-item">
-            <a class="mobile-list-socials-link link" href="">
-              <svg class="mobile-socials-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-twitter"></use>
+          <li class="team-wrape-item social-item">
+            <a class="social-link-footer" href="">
+              <svg class="link-icon-footer" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
               </svg>
             </a>
           </li>
-          <li class="mobile-list-socials-item">
-            <a class="mobile-list-socials-link link" href="">
-              <svg class="mobile-socials-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-facebook"></use>
+          <li class="team-wrape-item social-item">
+            <a class="social-link-footer" href="">
+              <svg class="link-icon-footer" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
               </svg>
             </a>
           </li>
-          <li class="mobile-list-socials-item">
-            <a class="mobile-list-socials-link link" href="">
-              <svg class="mobile-socials-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-linkedin"></use>
+          <li class="team-wrape-item social-item">
+            <a class="social-link-footer" href="">
+              <svg class="link-icon-footer" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
               </svg>
             </a>
           </li>
